@@ -1,0 +1,244 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    margin: 0px 9px;
+}
+.logo img{
+    height: 40px;
+}
+.btn{
+    margin: 0px 9px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 551px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("../images/1.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 542px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home div{
+    color: white;
+    font-size: 40px;
+}
+#home div span{
+    color: rgb(239, 212, 176);
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 351px;
+    justify-content: center;
+    align-items: center;
+}
+#about::before{
+    content: "";
+    background: url("../images/about.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 362px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#about div{
+
+    color: white;
+    font-size: 40px;
+}
+.box{
+    font-size: 25px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services{
+    margin: 20px 80px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 4px;
+    border-radius: 28px;
+    background-color: white;
+}
+#services img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#service .box p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url();
+width:100%;
+height:54%;
+z-index: -1;
+opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 20px;
+}
+#client img{
+    height: 124px;
+}
+#footer{
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+}
+#error::before{
+    content: "";
+    background: url("../images/404error.jpg")no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact{
+    position: relative;
+    height: 88vh;
+}
+.about1{
+    color: white;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../images/about.jpg")no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section h1 p{
+font-size: medium;
+}
+.btn2{
+    display: flex; 
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 11px;
+    padding: 6px 20px;
+}
+.btn2:hover{
+    color: white;
+    background-color: rgb(31, 29, 29);
+}
+@media (max-width:416px) {
+    .btn2{
+        font-size: 0.5rem;   
+    }  
+}
+
+/* Phone CSS  */
+/* Home section  */
+@media (max-width: 1200px) {
+    #home{
+        height: 370px;
+        padding: 3px 28px;
+    }
+    #home::before{
+        height: 370px;
+    }  
+    #home div{
+        font-size: 13px;
+    }  
+}
+@media (max-width: 1200px) {
+    #about{
+        height: 190px;
+        padding: 3px 28px;
+    }
+    #about::before{
+        height: 170px;
+    }  
+    #about div{
+        font-size: 13px;
+    }  
+}
+@media (max-width: 1200px) {
+    #services{
+        flex-direction: column;
+    }
+    #services .box{
+        padding: 14px;
+        margin: 2px 0px;
+        margin-bottom: 20px;
+    }
+    #clients{
+        flex-wrap: wrap;   
+    }
+    #clients img{
+        width: 66px;
+        padding: 5px;
+        height: auto;
+    }
+}
+@media (max-width: 460px) {
+    #footer{
+        font-size: 10px;
+    }
+}
+
